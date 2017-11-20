@@ -8,9 +8,5 @@ let buildDashboard = require("./buildDashboard")
 
 setLocalStorage(mainDB)
 
-let sessionStorage = getSessionStorage()
-if(sessionStorage === null){
-    buildLandingPage()
-} else {
-    buildDashboard()
-}
+buildDashboard()
+

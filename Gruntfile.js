@@ -5,7 +5,7 @@ module.exports = function foo(grunt) {
         watch: {
             scripts: {
                 files: ["**/scripts/*.js", "!node_modules/**/*.js"],
-                tasks: ["eslint", "browserify", "uglify"],
+                tasks: ["browserify", "uglify"],
                 options: {
                     spawn: false,
                 },
